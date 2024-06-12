@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navigation fixed-top" id="navbar-scroll-background">
+            <div class="container">
+                <a class="navbar-brand" href="#" >
+                    <svg width="150" height="50" viewBox="0 0 85 19" fill="black" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.30916 15.375V6.219H5.25716C6.15316 6.219 6.86116 6.443 7.38116 6.891C7.90116 7.331 8.16116 8.007 8.16116 8.919C8.16116 9.495 8.03716 9.995 7.78916 10.419C7.54916 10.835 7.20916 11.155 6.76916 11.379C6.33716 11.603 5.83316 11.715 5.25716 11.715H3.03716V15.375H1.30916ZM5.01716 10.203C5.48116 10.203 5.83316 10.099 6.07316 9.891C6.32116 9.683 6.44516 9.379 6.44516 8.979C6.44516 8.587 6.32116 8.287 6.07316 8.079C5.82516 7.871 5.47316 7.767 5.01716 7.767H3.03716V10.203H5.01716ZM9.22935 15.375V6.219H10.8494V9.495C11.1134 9.127 11.3894 8.871 11.6774 8.727C11.9654 8.575 12.2974 8.499 12.6734 8.499C13.7294 8.499 14.4294 8.875 14.7734 9.627C14.9014 9.891 14.9814 10.159 15.0134 10.431C15.0454 10.703 15.0614 11.059 15.0614 11.499V15.375H13.4414V11.475C13.4414 11.131 13.4134 10.855 13.3574 10.647C13.3094 10.431 13.2294 10.259 13.1174 10.131C12.9254 9.931 12.6414 9.831 12.2654 9.831C11.8014 9.831 11.4574 9.967 11.2334 10.239C11.0974 10.399 10.9974 10.611 10.9334 10.875C10.8774 11.139 10.8494 11.495 10.8494 11.943V15.375H9.22935ZM19.651 15.507C18.979 15.507 18.383 15.359 17.863 15.063C17.343 14.767 16.935 14.351 16.639 13.815C16.351 13.279 16.207 12.663 16.207 11.967C16.207 11.295 16.351 10.695 16.639 10.167C16.935 9.639 17.343 9.231 17.863 8.943C18.383 8.647 18.979 8.499 19.651 8.499C20.323 8.499 20.919 8.647 21.439 8.943C21.967 9.239 22.375 9.651 22.663 10.179C22.959 10.699 23.107 11.295 23.107 11.967C23.107 12.663 22.963 13.279 22.675 13.815C22.387 14.351 21.979 14.767 21.451 15.063C20.931 15.359 20.331 15.507 19.651 15.507ZM19.651 14.115C20.179 14.115 20.607 13.915 20.935 13.515C21.263 13.115 21.427 12.599 21.427 11.967C21.427 11.359 21.263 10.863 20.935 10.479C20.607 10.087 20.179 9.891 19.651 9.891C19.307 9.891 18.999 9.979 18.727 10.155C18.455 10.331 18.243 10.579 18.091 10.899C17.939 11.211 17.863 11.567 17.863 11.967C17.863 12.607 18.027 13.127 18.355 13.527C18.691 13.919 19.123 14.115 19.651 14.115ZM26.3528 15.375C25.3048 15.375 24.7808 14.883 24.7808 13.899V9.939H23.7848V8.643H24.7808V6.219H26.4008V8.643H27.6968V9.939H26.4008V13.407C26.4008 13.615 26.4328 13.771 26.4968 13.875C26.5688 13.979 26.7208 14.031 26.9528 14.031H27.6848V15.375H26.3528ZM31.8971 15.507C31.2251 15.507 30.6291 15.359 30.1091 15.063C29.5891 14.767 29.1811 14.351 28.8851 13.815C28.5971 13.279 28.4531 12.663 28.4531 11.967C28.4531 11.295 28.5971 10.695 28.8851 10.167C29.1811 9.639 29.5891 9.231 30.1091 8.943C30.6291 8.647 31.2251 8.499 31.8971 8.499C32.5691 8.499 33.1651 8.647 33.6851 8.943C34.2131 9.239 34.6211 9.651 34.9091 10.179C35.2051 10.699 35.3531 11.295 35.3531 11.967C35.3531 12.663 35.2091 13.279 34.9211 13.815C34.6331 14.351 34.2251 14.767 33.6971 15.063C33.1771 15.359 32.5771 15.507 31.8971 15.507ZM31.8971 14.115C32.4251 14.115 32.8531 13.915 33.1811 13.515C33.5091 13.115 33.6731 12.599 33.6731 11.967C33.6731 11.359 33.5091 10.863 33.1811 10.479C32.8531 10.087 32.4251 9.891 31.8971 9.891C31.5531 9.891 31.2451 9.979 30.9731 10.155C30.7011 10.331 30.4891 10.579 30.3371 10.899C30.1851 11.211 30.1091 11.567 30.1091 11.967C30.1091 12.607 30.2731 13.127 30.6011 13.527C30.9371 13.919 31.3691 14.115 31.8971 14.115ZM39.6532 17.931C38.8532 17.931 38.1652 17.763 37.5892 17.427C37.0212 17.099 36.6692 16.535 36.5332 15.735H38.1652C38.2692 16.063 38.4412 16.299 38.6812 16.443C38.9212 16.595 39.2412 16.671 39.6412 16.671C40.1692 16.671 40.5612 16.551 40.8172 16.311C41.0732 16.071 41.2012 15.743 41.2012 15.327V14.379C40.9372 14.747 40.6532 15.003 40.3492 15.147C40.0532 15.291 39.6972 15.363 39.2812 15.363C38.7052 15.363 38.1932 15.219 37.7452 14.931C37.2972 14.635 36.9492 14.227 36.7012 13.707C36.4532 13.187 36.3292 12.603 36.3292 11.955C36.3292 11.291 36.4532 10.699 36.7012 10.179C36.9492 9.651 37.2972 9.239 37.7452 8.943C38.1932 8.647 38.7052 8.499 39.2812 8.499C39.6972 8.499 40.0532 8.575 40.3492 8.727C40.6532 8.871 40.9372 9.127 41.2012 9.495V8.643H42.8212V14.943C42.8212 16.023 42.5372 16.791 41.9692 17.247C41.4092 17.703 40.6372 17.931 39.6532 17.931ZM39.6652 13.971C40.0012 13.971 40.3012 13.883 40.5652 13.707C40.8292 13.531 41.0332 13.287 41.1772 12.975C41.3292 12.663 41.4052 12.315 41.4052 11.931C41.4052 11.547 41.3292 11.199 41.1772 10.887C41.0332 10.575 40.8292 10.331 40.5652 10.155C40.3012 9.979 40.0012 9.891 39.6652 9.891C39.1532 9.891 38.7412 10.087 38.4292 10.479C38.1172 10.863 37.9612 11.347 37.9612 11.931C37.9612 12.515 38.1172 13.003 38.4292 13.395C38.7412 13.779 39.1532 13.971 39.6652 13.971ZM44.2799 15.375V8.643H45.8999V9.447C46.1479 9.103 46.4239 8.859 46.7279 8.715C47.0399 8.571 47.4039 8.499 47.8199 8.499H48.0119V10.059H47.6399C47.1279 10.059 46.7279 10.195 46.4399 10.467C46.2559 10.651 46.1199 10.887 46.0319 11.175C45.9439 11.455 45.8999 11.815 45.8999 12.255V15.375H44.2799ZM50.841 15.507C50.185 15.507 49.653 15.335 49.245 14.991C48.837 14.639 48.633 14.151 48.633 13.527C48.633 12.855 48.889 12.343 49.401 11.991C49.769 11.735 50.293 11.543 50.973 11.415L52.977 11.043C52.961 10.627 52.853 10.311 52.653 10.095C52.453 9.879 52.153 9.771 51.753 9.771C51.441 9.771 51.165 9.863 50.925 10.047C50.693 10.231 50.549 10.479 50.493 10.791H48.885C48.997 10.047 49.325 9.479 49.869 9.087C50.413 8.695 51.045 8.499 51.765 8.499C52.173 8.499 52.553 8.559 52.905 8.679C53.257 8.791 53.557 8.959 53.805 9.183C54.053 9.399 54.233 9.651 54.345 9.939C54.457 10.227 54.525 10.515 54.549 10.803C54.581 11.091 54.597 11.447 54.597 11.871V15.375H52.977V14.463C52.809 14.759 52.605 14.983 52.365 15.135C51.989 15.383 51.481 15.507 50.841 15.507ZM51.237 14.235C51.557 14.235 51.845 14.171 52.101 14.043C52.437 13.875 52.669 13.651 52.797 13.371C52.925 13.091 52.997 12.711 53.013 12.231L51.405 12.555C50.973 12.635 50.661 12.763 50.469 12.939C50.325 13.083 50.253 13.259 50.253 13.467C50.253 13.715 50.341 13.907 50.517 14.043C50.701 14.171 50.941 14.235 51.237 14.235ZM59.5269 8.511C60.1109 8.511 60.6269 8.659 61.0749 8.955C61.5229 9.251 61.8709 9.667 62.1189 10.203C62.3669 10.731 62.4909 11.335 62.4909 12.015C62.4909 12.695 62.3669 13.303 62.1189 13.839C61.8709 14.367 61.5229 14.779 61.0749 15.075C60.6269 15.371 60.1109 15.519 59.5269 15.519C59.1109 15.519 58.7509 15.447 58.4469 15.303C58.1509 15.151 57.8749 14.891 57.6189 14.523V17.799H55.9989V8.643H57.6189V9.495C57.8829 9.127 58.1629 8.871 58.4589 8.727C58.7549 8.583 59.1109 8.511 59.5269 8.511ZM59.1549 9.903C58.6429 9.903 58.2229 10.099 57.8949 10.491C57.5749 10.883 57.4149 11.391 57.4149 12.015C57.4149 12.639 57.5749 13.147 57.8949 13.539C58.2229 13.931 58.6429 14.127 59.1549 14.127C59.6669 14.127 60.0789 13.931 60.3909 13.539C60.7029 13.139 60.8589 12.631 60.8589 12.015C60.8589 11.399 60.7029 10.895 60.3909 10.503C60.0789 10.103 59.6669 9.903 59.1549 9.903ZM63.7098 15.375V6.219H65.3298V9.495C65.5938 9.127 65.8698 8.871 66.1578 8.727C66.4458 8.575 66.7778 8.499 67.1538 8.499C68.2098 8.499 68.9098 8.875 69.2538 9.627C69.3818 9.891 69.4618 10.159 69.4938 10.431C69.5258 10.703 69.5418 11.059 69.5418 11.499V15.375H67.9218V11.475C67.9218 11.131 67.8938 10.855 67.8378 10.647C67.7898 10.431 67.7098 10.259 67.5978 10.131C67.4058 9.931 67.1218 9.831 66.7458 9.831C66.2818 9.831 65.9378 9.967 65.7138 10.239C65.5778 10.399 65.4778 10.611 65.4138 10.875C65.3578 11.139 65.3298 11.495 65.3298 11.943V15.375H63.7098ZM71.0714 17.799V16.431H71.8034C72.0434 16.431 72.2234 16.395 72.3434 16.323C72.4714 16.259 72.5794 16.111 72.6674 15.879L72.8474 15.399L70.3634 8.643H72.1154L73.6874 13.587L75.1034 8.643H76.8434L74.2274 16.167C74.0194 16.767 73.7634 17.187 73.4594 17.427C73.1634 17.675 72.7394 17.799 72.1874 17.799H71.0714Z"
+                            fill="white" />
+                        <rect x="78.5879" y="0.833984" width="5.70508" height="10.041" fill="#FFF0E4" />
+                        <path
+                            d="M81.3544 4.83347C81.2064 5.02147 81.0244 5.17947 80.8084 5.30747C80.5924 5.43147 80.3584 5.51347 80.1064 5.55347V4.75547C80.3984 4.69547 80.6564 4.57747 80.8804 4.40147C81.1044 4.22547 81.2724 4.01747 81.3844 3.77747H82.2184V8.35547H81.3544V4.83347Z"
+                            fill="black" />
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Demos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                                <li><a class="dropdown-item" href="#">Home 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                All Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                                <li><a class="dropdown-item" href="#">Home 2</a></li>
+                                <li><a class="dropdown-item" href="#">Home 3</a></li>
+                                <li><a class="dropdown-item" href="#">About Us</a></li>
+                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                <li><a class="dropdown-item" href="#">Portfolio Details</a></li>
+                                <li><a class="dropdown-item" href="#">Shop</a></li>
+                                <li><a class="dropdown-item" href="#">Shop Details</a></li>
+                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                <li><a class="dropdown-item" href="#">Services Details</a></li>
+                                <li><a class="dropdown-item" href="#">Pricing</a></li>
+                                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div><i class="shop-cart ri-shopping-cart-fill" style="font-size: 20px;"></i></div>
+    
+    
+    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-scroll" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active display-flex">
+                    <img src="https://i.pinimg.com/564x/56/eb/8e/56eb8ec03652cf262aea066f833d014c.jpg"
+                        class="d-block w-100" alt="image-here">
+                    <div class="slider-text">
+                        <h1 class="slider-text-main">We believe that every picture tells a story</h1>
+                        <p class="slider-text-para">From intimate portrait sessions to large-scale corporate events, we
+                            have
+                            the expertise and creativity to deliver outstanding results.</p>
+                        <button id="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/564x/0a/4e/0a/0a4e0af27ab4f615a8dd4a14041fa272.jpg"
+                        class="d-block w-100" alt="image-here">
+                    <div class="slider-text">
+                        <h1 class="slider-text-main">Preserving moments to cherish forever</h1>
+                        <p class="slider-text-para">From intimate portrait sessions to large-scale corporate events, we
+                            have
+                            the expertise and creativity to deliver outstanding results.</p>
+                        <button id="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row flex-align-justify-wrap second-page">
+                <div class="left-image-div col-lg">
+                    <div class="img-wrapper img-wrapper1">
+                        <img src="images/6644d17d542ff5c415356fd1_pexels-rethaferguson-3811977-p-500.jpg" alt="">
+                    </div>
+                    <div class="img-wrapper img-wrapper2">
+                        <img src="images/6644d24fddd9992f0f62ec7d_marcus-zymmer-6i4oaXNnPUA-unsplash-p-500.jpg" alt="">
+                    </div>
+                    <div class="img-wrapper img-wrapper3">
+                        <img src="images/6644d1de1deff79ae0330427_kailey-sniffin-trVtuHxKkbA-unsplash-p-500.jpg" alt="">
+                    </div>
+                    <div class="img-wrapper img-wrapper4">
+                        <img src="images/6644d17d32dc30f0aca2ed98_eugenivy_now-jGsexvfL5rM-unsplash-p-500.jpg" alt="">
+                    </div>
+                    <div class="img-wrapper img-wrapper5">
+                        <img src="images/6644d24ff5aeec987bd745ef_pexels-miraclekilly-199436491-11565307-p-500.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="second-page-right-text-div col-lg">
+                    <h6>About Us</h6>
+                    <h2>Bringing Professional Vision To Every Shot</h2>
+                    <p id="second-page-right-text-div-p">We believe in the power of photography to tell stories, evoke
+                        emotions, and create lasting
+                        memories. Our approach is a blend of technical expertise and artistic intuition, ensuring that
+                        every photo
+                        we take is not just a picture, but a piece of art.</p>
+                    <button id="aboutUs-btn">More About Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-services">
+            <div class="text-section">
+                <h6>Our Services</h6>
+                <h2>Photography Services</h2>
+                <p>From intimate portrait sessions to large-scale corporate events, we have the expertise and creativity
+                    to deliver outstanding results.</p>
+            </div>
+
+            <div class="flex-align-justify-wrap">
+                <div class="col flex-align-justify-wrap flex-dire-col cart-section-div">
+                    <div class="circle flex-align-justify-wrap">
+                        <img src="https://cdn.prod.website-files.com/6643149b28649d9057d7ef1e/664336fcafb8e140a68cee76_fi_4651286.svg"
+                            alt="">
+                    </div>
+                    <h3>Commercial Photography</h3>
+                    <p>We offer a wide range of photography services tailored to meet your unique needs.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="col flex-align-justify-wrap flex-dire-col cart-section-div">
+                    <div class="circle flex-align-justify-wrap">
+                        <img src="https://cdn.prod.website-files.com/6643149b28649d9057d7ef1e/6643391fc584a1620ccb9915_fi_1050678.svg"
+                            alt="">
+                    </div>
+                    <h3>portrait Photography</h3>
+                    <p>We offer a wide range of photography services tailored to meet your unique needs.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="col flex-align-justify-wrap flex-dire-col cart-section-div">
+                    <div class="circle flex-align-justify-wrap">
+                        <img src="https://cdn.prod.website-files.com/6643149b28649d9057d7ef1e/664339575fbd001e9ec2291b_fi_2119162.svg"
+                            alt="">
+                    </div>
+                    <h3>Wedding Photography</h3>
+                    <p>We offer a wide range of photography services tailored to meet your unique needs.</p>
+                    <button>Learn More</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="our-team">
+            <div class="our-team-text-div">
+                <h6>Our Team</h6>
+                <h2>Meet Our Photographers</h2>
+                <p>The expertise and creativity to deliver outstanding results.</p>
+            </div>
+            <div class="container our-team-cart-div">
+                <div class="row display-grid">
+                    <div class="our-team-box">
+                        <div class="our-team-circle">
+                            <img src="images/our team/ceo.jpg" alt="">
+                        </div>
+                        <h3>Rosie Koller</h3>
+                        <p>CEO</p>
+                    </div>
+                    <div class="our-team-box">
+                        <div class="our-team-circle">
+                            <img src="images/our team/6643149b28649d9057d7efb7_image 176.jpg" alt="">
+                        </div>
+                        <h3>Ronald Richards</h3>
+                        <p>Photographer</p>
+                    </div>
+                    <div class="our-team-box">
+                        <div class="our-team-circle">
+                            <img src="images/our team/photographer 2.jpg" alt="">
+                        </div>
+                        <h3>Theresa Webb</h3>
+                        <p>Photographer</p>
+                    </div>
+                    <div class="our-team-box">
+                        <div class="our-team-circle">
+                            <img src="images/our team/photographer 3.jpg" alt="">
+                        </div>
+                        <h3>Brooklyn Simmons</h3>
+                        <p>Photographer</p>
+                    </div>
+                    <div class="our-team-box">
+                        <div class="our-team-circle">
+                            <img src="images/our team/photographer 4.jpg" alt="">
+                        </div>
+                        <h3>Jessica Robinson</h3>
+                        <p>Makeup Artist</p>
+                    </div>
+                    <div class="our-team-box">
+                        <div class="our-team-circle">
+                            <img src="images/our team/photographer 5.jpg" alt="">
+                        </div>
+                        <h3>Jacob Jones</h3>
+                        <p>Videographer</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cmt-section">
+            <div class="first">
+                <p>Testimonials</p>
+            </div>
+            <div class="second">
+                <div class="cmt-section-circle">
+                    <img src="images/our team/ceo.jpg" alt="">
+                </div>
+                <h3>Landon Mason</h3>
+                <p>CEO of Proximity</p>
+            </div>
+            <div class="third">
+                <span class="line"></span>
+                <span class="box"></span>
+                <p>&ldquo;</p>
+            </div>
+            <div class="forth">
+                <p>"Our family portrait session was amazing! Made us all feel so comfortable, even the kids had a
+                    great time. The photos turned out beautifully."</p>
+            </div>
+        </div>
+
+        <div class="price-section">
+            <div class="back-image">
+                <img src="" alt="">
+            </div>
+            <div class="price-section-card">
+                <div class="our-team-box second-page-right-text-div price-section-card-box">
+                    <h3>Photo Shoot</h3>
+                    <p><span>$300</span>/Hour</p>
+                    <p>16-20 Retouched photos</p>
+                    <p>Digital files</p>
+                    <p>Stylist (for additional fee)</p>
+                    <p>Makeup & hair (for additional fee)</p>
+                    <button>Choose Plan</button>
+                </div>
+                <div class="our-team-box second-page-right-text-div price-section-card-box price-section-card-box-2">
+                    <h3>Wedding</h3>
+                    <p><span>$700</span>/Hour</p>
+                    <p>16-20 Retouched photos</p>
+                    <p>Detailed event day timeline</p>
+                    <p>Digital files</p>
+                    <p>Assistant photographer</p>
+                    <p>Second photographer (for additional fee)</p>
+                    <button>Choose Plan</button>
+                </div>
+                <div class="our-team-box second-page-right-text-div price-section-card-box">
+                    <h3>Engagement</h3>
+                    <p><span>$500</span>/Hour</p>
+                    <p>16-20 Retouched photos</p>
+                    <p>Digital files</p>
+                    <p>Assistant photographer (for additional fee)</p>
+                    <p>Second photographer (for additional fee)</p>
+                    <button>Choose Plan</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="still-have-question-div">
+            <h3>Still have questions? Contact us!</h3>
+            <button>Contact Support</button>
+        </div>
+
+
+        <div class="our-blog">
+            <div class="text-section our-blog-text-div">
+                <h6>Our Blog</h6>
+                <h2>Recent Blog Posts</h2>
+            </div>
+
+            <div class="our-blog-slide-div">
+                <div class="our-blog-slide-div-img">
+                    <div class="our-blog-img">
+                        <img src="images/blog/1.jpg"
+                        alt="">
+                    </div>
+                    <div class="our-blog-slide-div-img-content">
+                        <span>News</span>
+                        <h3>Untdersanding Different Photohraphy Styles</h3>
+                        <p>Nam nec tortor congue, mollis metus eu, viverra mauris. Aliquam at magna volutpat, placerat
+                            turpis nec, cursus urna. Curabitur non urna porttitor, faucibus ex vel, efficitur ex. Proin
+                            turpis tortor, cursus vitae dignissim ac, aliquam id odio. Integer sed nisi mollis, aliquet
+                            lacus non, scelerisque velit.</p>
+                        <p>14/5/2024</p>
+                    </div>
+                </div>
+                <div class="our-blog-slide-div-img">
+                    <div class="our-blog-img">
+                        <img src="images/blog/2.jpg"
+                        alt="">
+                    </div>
+                    <div class="our-blog-slide-div-img-content">
+                        <span>News</span>
+                        <h3>Untdersanding Different Photohraphy Styles</h3>
+                        <p>Nam nec tortor congue, mollis metus eu, viverra mauris. Aliquam at magna volutpat, placerat
+                            turpis nec, cursus urna. Curabitur non urna porttitor, faucibus ex vel, efficitur ex. Proin
+                            turpis tortor, cursus vitae dignissim ac, aliquam id odio. Integer sed nisi mollis, aliquet
+                            lacus non, scelerisque velit.</p>
+                        <p>14/5/2024</p>
+                    </div>
+                </div>
+                <div class="our-blog-slide-div-img">
+                    <div class="our-blog-img">
+                        <img src="images/blog/3.jpg"
+                        alt="">
+                    </div>
+                    <div class="our-blog-slide-div-img-content">
+                        <span>News</span>
+                        <h3>Untdersanding Different Photohraphy Styles</h3>
+                        <p>Nam nec tortor congue, mollis metus eu, viverra mauris. Aliquam at magna volutpat, placerat
+                            turpis nec, cursus urna. Curabitur non urna porttitor, faucibus ex vel, efficitur ex. Proin
+                            turpis tortor, cursus vitae dignissim ac, aliquam id odio. Integer sed nisi mollis, aliquet
+                            lacus non, scelerisque velit.</p>
+                        <p>14/5/2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="span-line"></div>
+            <div class="our-team-box second-page-right-text-div for-btn">
+                <button id="see-more-article-btn">See More Article</button>
+            </div>
+        </div>
+
+        <div class="four-images">
+            <div class="images images1">
+                <img src="images/1.jpg" alt="">
+                <div class="text-overlay">Rebecca</div>
+            </div>
+            <div class="images images2">
+                <img src="images/2.jpg" alt="">
+                <div class="text-overlay">Tessa & Sally</div>
+            </div>
+            <div class="images images3">
+                <img src="images/3.jpg" alt="">
+                <div class="text-overlay">Vivien</div>
+            </div>
+            <div class="images images4">
+                <img src="images/4.jpg" alt="">
+                <div class="text-overlay">Grace</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="upperdiv">
+            <div class="upperdiv-box">
+                <div class="logo">
+                    <a class="navbar-brand" href="#" >
+                        <svg width="150" height="50" viewBox="0 0 85 19" fill="black" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.30916 15.375V6.219H5.25716C6.15316 6.219 6.86116 6.443 7.38116 6.891C7.90116 7.331 8.16116 8.007 8.16116 8.919C8.16116 9.495 8.03716 9.995 7.78916 10.419C7.54916 10.835 7.20916 11.155 6.76916 11.379C6.33716 11.603 5.83316 11.715 5.25716 11.715H3.03716V15.375H1.30916ZM5.01716 10.203C5.48116 10.203 5.83316 10.099 6.07316 9.891C6.32116 9.683 6.44516 9.379 6.44516 8.979C6.44516 8.587 6.32116 8.287 6.07316 8.079C5.82516 7.871 5.47316 7.767 5.01716 7.767H3.03716V10.203H5.01716ZM9.22935 15.375V6.219H10.8494V9.495C11.1134 9.127 11.3894 8.871 11.6774 8.727C11.9654 8.575 12.2974 8.499 12.6734 8.499C13.7294 8.499 14.4294 8.875 14.7734 9.627C14.9014 9.891 14.9814 10.159 15.0134 10.431C15.0454 10.703 15.0614 11.059 15.0614 11.499V15.375H13.4414V11.475C13.4414 11.131 13.4134 10.855 13.3574 10.647C13.3094 10.431 13.2294 10.259 13.1174 10.131C12.9254 9.931 12.6414 9.831 12.2654 9.831C11.8014 9.831 11.4574 9.967 11.2334 10.239C11.0974 10.399 10.9974 10.611 10.9334 10.875C10.8774 11.139 10.8494 11.495 10.8494 11.943V15.375H9.22935ZM19.651 15.507C18.979 15.507 18.383 15.359 17.863 15.063C17.343 14.767 16.935 14.351 16.639 13.815C16.351 13.279 16.207 12.663 16.207 11.967C16.207 11.295 16.351 10.695 16.639 10.167C16.935 9.639 17.343 9.231 17.863 8.943C18.383 8.647 18.979 8.499 19.651 8.499C20.323 8.499 20.919 8.647 21.439 8.943C21.967 9.239 22.375 9.651 22.663 10.179C22.959 10.699 23.107 11.295 23.107 11.967C23.107 12.663 22.963 13.279 22.675 13.815C22.387 14.351 21.979 14.767 21.451 15.063C20.931 15.359 20.331 15.507 19.651 15.507ZM19.651 14.115C20.179 14.115 20.607 13.915 20.935 13.515C21.263 13.115 21.427 12.599 21.427 11.967C21.427 11.359 21.263 10.863 20.935 10.479C20.607 10.087 20.179 9.891 19.651 9.891C19.307 9.891 18.999 9.979 18.727 10.155C18.455 10.331 18.243 10.579 18.091 10.899C17.939 11.211 17.863 11.567 17.863 11.967C17.863 12.607 18.027 13.127 18.355 13.527C18.691 13.919 19.123 14.115 19.651 14.115ZM26.3528 15.375C25.3048 15.375 24.7808 14.883 24.7808 13.899V9.939H23.7848V8.643H24.7808V6.219H26.4008V8.643H27.6968V9.939H26.4008V13.407C26.4008 13.615 26.4328 13.771 26.4968 13.875C26.5688 13.979 26.7208 14.031 26.9528 14.031H27.6848V15.375H26.3528ZM31.8971 15.507C31.2251 15.507 30.6291 15.359 30.1091 15.063C29.5891 14.767 29.1811 14.351 28.8851 13.815C28.5971 13.279 28.4531 12.663 28.4531 11.967C28.4531 11.295 28.5971 10.695 28.8851 10.167C29.1811 9.639 29.5891 9.231 30.1091 8.943C30.6291 8.647 31.2251 8.499 31.8971 8.499C32.5691 8.499 33.1651 8.647 33.6851 8.943C34.2131 9.239 34.6211 9.651 34.9091 10.179C35.2051 10.699 35.3531 11.295 35.3531 11.967C35.3531 12.663 35.2091 13.279 34.9211 13.815C34.6331 14.351 34.2251 14.767 33.6971 15.063C33.1771 15.359 32.5771 15.507 31.8971 15.507ZM31.8971 14.115C32.4251 14.115 32.8531 13.915 33.1811 13.515C33.5091 13.115 33.6731 12.599 33.6731 11.967C33.6731 11.359 33.5091 10.863 33.1811 10.479C32.8531 10.087 32.4251 9.891 31.8971 9.891C31.5531 9.891 31.2451 9.979 30.9731 10.155C30.7011 10.331 30.4891 10.579 30.3371 10.899C30.1851 11.211 30.1091 11.567 30.1091 11.967C30.1091 12.607 30.2731 13.127 30.6011 13.527C30.9371 13.919 31.3691 14.115 31.8971 14.115ZM39.6532 17.931C38.8532 17.931 38.1652 17.763 37.5892 17.427C37.0212 17.099 36.6692 16.535 36.5332 15.735H38.1652C38.2692 16.063 38.4412 16.299 38.6812 16.443C38.9212 16.595 39.2412 16.671 39.6412 16.671C40.1692 16.671 40.5612 16.551 40.8172 16.311C41.0732 16.071 41.2012 15.743 41.2012 15.327V14.379C40.9372 14.747 40.6532 15.003 40.3492 15.147C40.0532 15.291 39.6972 15.363 39.2812 15.363C38.7052 15.363 38.1932 15.219 37.7452 14.931C37.2972 14.635 36.9492 14.227 36.7012 13.707C36.4532 13.187 36.3292 12.603 36.3292 11.955C36.3292 11.291 36.4532 10.699 36.7012 10.179C36.9492 9.651 37.2972 9.239 37.7452 8.943C38.1932 8.647 38.7052 8.499 39.2812 8.499C39.6972 8.499 40.0532 8.575 40.3492 8.727C40.6532 8.871 40.9372 9.127 41.2012 9.495V8.643H42.8212V14.943C42.8212 16.023 42.5372 16.791 41.9692 17.247C41.4092 17.703 40.6372 17.931 39.6532 17.931ZM39.6652 13.971C40.0012 13.971 40.3012 13.883 40.5652 13.707C40.8292 13.531 41.0332 13.287 41.1772 12.975C41.3292 12.663 41.4052 12.315 41.4052 11.931C41.4052 11.547 41.3292 11.199 41.1772 10.887C41.0332 10.575 40.8292 10.331 40.5652 10.155C40.3012 9.979 40.0012 9.891 39.6652 9.891C39.1532 9.891 38.7412 10.087 38.4292 10.479C38.1172 10.863 37.9612 11.347 37.9612 11.931C37.9612 12.515 38.1172 13.003 38.4292 13.395C38.7412 13.779 39.1532 13.971 39.6652 13.971ZM44.2799 15.375V8.643H45.8999V9.447C46.1479 9.103 46.4239 8.859 46.7279 8.715C47.0399 8.571 47.4039 8.499 47.8199 8.499H48.0119V10.059H47.6399C47.1279 10.059 46.7279 10.195 46.4399 10.467C46.2559 10.651 46.1199 10.887 46.0319 11.175C45.9439 11.455 45.8999 11.815 45.8999 12.255V15.375H44.2799ZM50.841 15.507C50.185 15.507 49.653 15.335 49.245 14.991C48.837 14.639 48.633 14.151 48.633 13.527C48.633 12.855 48.889 12.343 49.401 11.991C49.769 11.735 50.293 11.543 50.973 11.415L52.977 11.043C52.961 10.627 52.853 10.311 52.653 10.095C52.453 9.879 52.153 9.771 51.753 9.771C51.441 9.771 51.165 9.863 50.925 10.047C50.693 10.231 50.549 10.479 50.493 10.791H48.885C48.997 10.047 49.325 9.479 49.869 9.087C50.413 8.695 51.045 8.499 51.765 8.499C52.173 8.499 52.553 8.559 52.905 8.679C53.257 8.791 53.557 8.959 53.805 9.183C54.053 9.399 54.233 9.651 54.345 9.939C54.457 10.227 54.525 10.515 54.549 10.803C54.581 11.091 54.597 11.447 54.597 11.871V15.375H52.977V14.463C52.809 14.759 52.605 14.983 52.365 15.135C51.989 15.383 51.481 15.507 50.841 15.507ZM51.237 14.235C51.557 14.235 51.845 14.171 52.101 14.043C52.437 13.875 52.669 13.651 52.797 13.371C52.925 13.091 52.997 12.711 53.013 12.231L51.405 12.555C50.973 12.635 50.661 12.763 50.469 12.939C50.325 13.083 50.253 13.259 50.253 13.467C50.253 13.715 50.341 13.907 50.517 14.043C50.701 14.171 50.941 14.235 51.237 14.235ZM59.5269 8.511C60.1109 8.511 60.6269 8.659 61.0749 8.955C61.5229 9.251 61.8709 9.667 62.1189 10.203C62.3669 10.731 62.4909 11.335 62.4909 12.015C62.4909 12.695 62.3669 13.303 62.1189 13.839C61.8709 14.367 61.5229 14.779 61.0749 15.075C60.6269 15.371 60.1109 15.519 59.5269 15.519C59.1109 15.519 58.7509 15.447 58.4469 15.303C58.1509 15.151 57.8749 14.891 57.6189 14.523V17.799H55.9989V8.643H57.6189V9.495C57.8829 9.127 58.1629 8.871 58.4589 8.727C58.7549 8.583 59.1109 8.511 59.5269 8.511ZM59.1549 9.903C58.6429 9.903 58.2229 10.099 57.8949 10.491C57.5749 10.883 57.4149 11.391 57.4149 12.015C57.4149 12.639 57.5749 13.147 57.8949 13.539C58.2229 13.931 58.6429 14.127 59.1549 14.127C59.6669 14.127 60.0789 13.931 60.3909 13.539C60.7029 13.139 60.8589 12.631 60.8589 12.015C60.8589 11.399 60.7029 10.895 60.3909 10.503C60.0789 10.103 59.6669 9.903 59.1549 9.903ZM63.7098 15.375V6.219H65.3298V9.495C65.5938 9.127 65.8698 8.871 66.1578 8.727C66.4458 8.575 66.7778 8.499 67.1538 8.499C68.2098 8.499 68.9098 8.875 69.2538 9.627C69.3818 9.891 69.4618 10.159 69.4938 10.431C69.5258 10.703 69.5418 11.059 69.5418 11.499V15.375H67.9218V11.475C67.9218 11.131 67.8938 10.855 67.8378 10.647C67.7898 10.431 67.7098 10.259 67.5978 10.131C67.4058 9.931 67.1218 9.831 66.7458 9.831C66.2818 9.831 65.9378 9.967 65.7138 10.239C65.5778 10.399 65.4778 10.611 65.4138 10.875C65.3578 11.139 65.3298 11.495 65.3298 11.943V15.375H63.7098ZM71.0714 17.799V16.431H71.8034C72.0434 16.431 72.2234 16.395 72.3434 16.323C72.4714 16.259 72.5794 16.111 72.6674 15.879L72.8474 15.399L70.3634 8.643H72.1154L73.6874 13.587L75.1034 8.643H76.8434L74.2274 16.167C74.0194 16.767 73.7634 17.187 73.4594 17.427C73.1634 17.675 72.7394 17.799 72.1874 17.799H71.0714Z"
+                                fill="black" />
+                            <rect x="78.5879" y="0.833984" width="5.70508" height="10.041" fill="#FFF0E4" />
+                            <path
+                                d="M81.3544 4.83347C81.2064 5.02147 81.0244 5.17947 80.8084 5.30747C80.5924 5.43147 80.3584 5.51347 80.1064 5.55347V4.75547C80.3984 4.69547 80.6564 4.57747 80.8804 4.40147C81.1044 4.22547 81.2724 4.01747 81.3844 3.77747H82.2184V8.35547H81.3544V4.83347Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+                <p>2005 Stokes Isle Apt. 896, Venaville,
+                    New York 10010, USA</p>
+                <a href="">Info@Yourdomain.Com</a>
+                <a href="">(+68) 1200344509</a>
+                <div class="icons">
+                    <a href=""><i class="ri-facebook-fill icons-i"></i></a>
+                    <a href=""><i class="ri-instagram-line icons-i"></i></a>
+                    <a href=""><i class="ri-pinterest-line icons-i"></i></a>
+                </div>
+            </div>
+            <div class="upperdiv-box upperdiv-box-right">
+                <div class="upperdiv-box-inner">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="upperdiv-box-inner">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="upperdiv-box-inner">
+                    <h3>More</h3>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-div">
+            <p id="lower-div-left">&#169; Photography One. All Rights Reserved</p>
+            <p id="lower-div-right">Designed by<span>128.digital.</span></p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
